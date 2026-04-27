@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mozilla Text", sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    /* menggunakan flexbox dengan menggunakan flex-direction row (Horizontal) sebagai nilai defaultnya*/
+    justify-content: space-between;
+    /* mengatur alignment dari kontennua menjadi space-between*/
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: 400ms;
+    /* mengatur waktu transisi dari style ini ke style lain*/
+}
+
+/* hover efek ketika user mengsorot sebuah tombol navigasi */
+.nav-right a:hover {
+    /* menimpa beberapa style yang ada di atas */
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+
+.jumbotron {
+    /* background-color: bisque; */
+    background: url("https://www.excelsior.edu/wp-content/uploads/2025/01/computer-programming-vs-computer-science-image_blog.jpg") no-repeat center center/cover;
+    background-position: top;
+    text-align: center;
+    height: 50vh;
+    /* atur isi dari kontennya jadi center/rata tengah */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.jumbotron2 {
+    /* background-color: bisque; */
+    background: url("https://cdn.prod.website-files.com/6100d0111a4ed76bc1b9fd54/62a030850a538782b1755eeb_coding%203.jpg") no-repeat center center/cover;
+    background-position: top;
+    text-align: center;
+    height: 50vh;
+    /* atur isi dari kontennya jadi center/rata tengah */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.jumbotron h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.content {
+    color: white;
+    z-index: 4;
+}
+
+.overlay {
+    position: absolute;
+    /*menentukan posisi secara pasti*/
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    /*memberikan warna hitam dengan tingkat transparansi 50% sebagai overlay*/
+}
+
+#bodyprofile {
+    background-color: crimson;
+}
+
+#bodyabout {
+    background-color: rgb(249, 69, 69);
+    height: 99%;
+
+}
+
+#paragraf2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: azure;
+}
+
+#bodycontact {
+    background-color: chartreuse;
+}
+
+#paragraf {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    color: azure;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    height: 600px;
+    /* only for demonstration, should be removed */
+    background: rgb(122, 0, 24);
+    padding: 20px;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: rgb(226, 0, 38);
+    height: 600px;
+    /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #fa1b1b;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
